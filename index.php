@@ -37,6 +37,23 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
           </div>
         </section>
       </div>
+      <section id="section3" class="aos">
+  			<article class="bloc" data-aos="flip-left" id="left">
+  				<h4>Designed for usability</h4>
+  				<h2>Back to what's needed. Powerfully clever.</h2>
+  				<p>
+  					OwlSight keeps track of any project, issue you might have.
+            Clear display of what is needed to be done.
+  				</p>
+  			</article>
+  		</section>
+  		<section id="section4" class="aos">
+  			<article class="bloc" data-aos="slide-down">
+  				<h4>Astonishing UI</h4>
+  				<h2>A web application so smooth softwares would only dream of it.</h2>
+  				<h4>The best of Issue and Bug Tracking with a crisp clean interface. Improved.</h4>
+  			</article>
+  		</section>
     <div class="midbg">
     <div class="bottombg">
     </div>
