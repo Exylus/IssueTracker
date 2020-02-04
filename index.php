@@ -37,6 +37,8 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
           </div>
         </section>
       </div>
+    </div>
+    <div class="midbg">
       <section id="section3" class="aos">
   			<article class="bloc" data-aos="flip-left" id="left">
   				<h4>Designed for usability</h4>
@@ -54,11 +56,18 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
   				<h4>The best of Issue and Bug Tracking with a crisp clean interface. Improved.</h4>
   			</article>
   		</section>
-    <div class="midbg">
+    </div>
     <div class="bottombg">
     </div>
+    <div class="clear">
+
     </div>
-    </div>
+    <footer>
+      <div class="up" id="up">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+      <p>&copy; 2019-2020 Erwan Thomy & Xavier Wahl</p>
+    </footer>
   </body>
 
 
