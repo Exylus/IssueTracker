@@ -131,5 +131,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <p>Already have an account? <a href="login.php">Login here</a>.</p>
         </form>
     </div>
+    <footer>
+      <div class="up" id="up">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+      <p>&copy; 2019-2020 Erwan Thomy & Xavier Wahl</p>
+    </footer>
 </body>
 </html>

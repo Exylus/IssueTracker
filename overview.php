@@ -27,5 +27,11 @@
         </ul>
     </nav>
 </header>
+<footer>
+  <div class="up" id="up">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <p>&copy; 2019-2020 Erwan Thomy & Xavier Wahl</p>
+</footer>
 </body>
 </html>

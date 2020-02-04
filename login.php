@@ -120,5 +120,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
         </form>
     </div>
+    <footer>
+      <div class="up" id="up">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+      <p>&copy; 2019-2020 Erwan Thomy & Xavier Wahl</p>
+    </footer>
 </body>
 </html>

@@ -43,6 +43,11 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <h2>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>.</h2>
     <h3>Welcome to OwlSight</h3>
 </header>
-
+<footer>
+  <div class="up" id="up">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <p>&copy; 2019-2020 Erwan Thomy & Xavier Wahl</p>
+</footer>
 </body>
 </html>
