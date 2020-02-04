@@ -7,6 +7,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("location: index.php");
     exit;
 }
+// Include config file
+require_once "cfg/config.php";
 ?>
 
 <!DOCTYPE html>
@@ -43,6 +45,25 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <h2>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>.</h2>
     <h3>Welcome to OwlSight</h3>
 </header>
+
+<?php
+
+$sql = "SELECT assigned_to FROM users WHERE username=" + "'" + $_SESSION["username"] + "'";
+$result = mysqli_query($link, $sql);
+
+$lastproject = $result;
+
+$sql2 = "SELECT * FROM projects WHERE project_id=" + "'"+ $lastproject + "'";
+$result2 = mysqli_query($link, $sql2);
+
+$_SESSION["project_id"] = $result2;
+echo "Last project:" . ($_SESSION["project_id"] == null ? "Null" : $_SESSION["project_id"]);
+//if ($_SESSION["id"] == null) {
+//    echo "C'est null";
+//} else echo $_SESSION["id"];
+
+
+?>
 <footer>
   <div class="up" id="up">
     <i class="fas fa-chevron-up"></i>
