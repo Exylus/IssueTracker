@@ -33,7 +33,7 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
         <section id="section2" data-aos="flip-left" data-aos-delay="500">
           <div class="Performant">
             <h2>Simple as can be</h2>
-            <p>New decade, New look;$, New <b>YOU</b> <br> Why not try <b>OwlSight Issue Tracker</b> ?</p>
+            <p>New decade, New look, New <b>YOU</b> <br> Why not try <b>OwlSight Issue Tracker</b> ?</p>
           </div>
         </section>
       </div>
