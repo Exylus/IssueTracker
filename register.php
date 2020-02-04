@@ -1,4 +1,8 @@
 <?php
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+    header("location: home.php");
+    exit;
+}
 // Include config file
 require_once "cfg/config.php";
 
