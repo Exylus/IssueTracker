@@ -53,8 +53,8 @@ mysqli_close($link);
     <!-- NAVBAR -->
     <nav class="top-nav">
         <ul class="nav-list">
-            <li>
-                <a href="index.php" class="nav-link">Home</a>
+            <li id="thispage">
+                <a href="#" class="nav-link">Home</a>
             </li>
             <li>
                 <a href="overview.php" class="nav-link">Overview</a>
