@@ -20,9 +20,11 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
   </head>
                                 <!-- BODY  -->
   <body>
-    <div class="Sign-in">
-    <a class='btn btn-link' href="login.php"><h3>Sign in</h3></a>
-    </div>
+    <header>
+      <div class="Sign-in">
+      <a class='btn btn-link' href="login.php"><h3>Sign in</h3></a>
+      </div>
+    </header>
     <div class="topbg">
       <div id="content">
         <section id="section1">
