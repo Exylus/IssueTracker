@@ -15,12 +15,13 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <title>OwlSight - Flexible Issue Tracker</title>
   </head>
                                 <!-- BODY  -->
   <body>
     <div class="Sign-in">
-    <h3><a href="login.php">Sign in</a></h3>
+    <a class='btn btn-link' href="login.php"><h3>Sign in</h3></a>
     </div>
     <div class="topbg">
       <div id="content">

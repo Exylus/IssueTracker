@@ -46,6 +46,8 @@ mysqli_close($link);
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <title>OwlSight - Flexible Issue Tracker</title>
 </head>
 <body>
