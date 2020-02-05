@@ -9,6 +9,37 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 }
 // Include config file
 require_once "cfg/config.php";
+// Perform query
+
+if ($Userinfos = $link -> query("SELECT * FROM users WHERE username = '{$_SESSION['username']}'")) {
+}
+  if ($Userinfos -> num_rows > 0) {
+  }
+                      ////////////////////
+                      /* GET USER INFOS */
+                      ////////////////////
+    while($row = $Userinfos -> fetch_assoc()) {
+        $assigned_to = $row[assigned_to];
+        $userid = $row[id];
+        $username = $row[username];
+
+        $Project_infos = $link -> query("SELECT * FROM projects WHERE project_id = '{$assigned_to}' ");
+      }
+        if ($Project_infos -> num_rows > 0) {
+        }
+
+                        ///////////////////////
+                        /* GET PROJECT INFOS */
+                        ///////////////////////
+          while($row = $Project_infos -> fetch_assoc()) {
+            $project_id = $row[project_id];
+            $project_name = $row[project_name];
+
+          }
+
+// Close connection
+mysqli_close($link);
+
 ?>
 
 <!DOCTYPE html>
@@ -46,24 +77,6 @@ require_once "cfg/config.php";
     <h3>Welcome to OwlSight</h3>
 </header>
 
-<?php
-
-$sql = "SELECT assigned_to FROM users WHERE username=" + "'" + $_SESSION["username"] + "'";
-$result = mysqli_query($link, $sql);
-
-$lastproject = $result;
-
-$sql2 = "SELECT * FROM projects WHERE project_id=" + "'"+ $lastproject + "'";
-$result2 = mysqli_query($link, $sql2);
-
-$_SESSION["project_id"] = $result2;
-echo "Last project:" . ($_SESSION["project_id"] == null ? "Null" : $_SESSION["project_id"]);
-//if ($_SESSION["id"] == null) {
-//    echo "C'est null";
-//} else echo $_SESSION["id"];
-
-
-?>
 <footer>
   <div class="up" id="up">
     <i class="fas fa-chevron-up"></i>
