@@ -15,13 +15,15 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    	<link rel="stylesheet" href="css/aos.css">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <title>OwlSight - Flexible Issue Tracker</title>
   </head>
                                 <!-- BODY  -->
   <body>
     <header>
-      <div class="Sign-in">
+      <h1 data-aos-delay = "300" data-aos = "zoom-out">OwlSight</h1>
+      <div class="Sign-in" data-aos-delay = "3000" data-aos = "zoom-in">
       <a class='btn btn-link' href="login.php"><h3>Sign in</h3></a>
       </div>
     </header>
@@ -29,8 +31,8 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
       <div id="content">
         <section id="section1">
           <div class="OwlsightPres">
-            <h2 data-aos="slide-left">OwlSight</h2>
-            <p>Clean. Efficient.<br>Track your bugs.</p>
+            <h2 data-aos="slide-left">Flexible Issue Tracker</h2>
+            <h4>Clean. Efficient.<br><strong>Track your bugs.</strong></h4>
           </div>
         </section>
         <section id="section2" data-aos="flip-left" data-aos-delay="500">
@@ -44,8 +46,8 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     <div class="midbg">
       <section id="section3" class="aos">
   			<article class="bloc" data-aos="flip-left" id="left">
-  				<h4>Designed for usability</h4>
-  				<h2>Back to what's needed. Powerfully clever.</h2>
+  				<h2>Designed for usability</h2>
+  				<h3>Back to what's needed. Powerfully clever.</h3>
   				<p>
   					OwlSight keeps track of any project, issue you might have.
             Clear display of what is needed to be done.
@@ -54,8 +56,8 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
   		</section>
   		<section id="section4" class="aos">
   			<article class="bloc" data-aos="slide-down">
-  				<h4>Astonishing UI</h4>
-  				<h2>A web application so smooth softwares would only dream of it.</h2>
+  				<h2>Astonishing UI</h2>
+  				<h3>A web application so smooth softwares would only dream of it.</h3>
   				<h4>The best of Issue and Bug Tracking with a crisp clean interface. Improved.</h4>
   			</article>
   		</section>
@@ -69,7 +71,7 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
       <div class="up" id="up">
         <i class="fas fa-chevron-up"></i>
       </div>
-      <p>&copy; 2019-2020 Erwan Thomy & Xavier Wahl</p>
+      <p>&copy; 2019-2020 Erwan Thomy</p>
     </footer>
   </body>
 
