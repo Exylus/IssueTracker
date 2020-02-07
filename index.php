@@ -22,20 +22,20 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
                                 <!-- BODY  -->
   <body>
     <header>
-      <h1 data-aos-delay = "300" data-aos = "zoom-out">OwlSight</h1>
-      <div class="Sign-in" data-aos-delay = "3000" data-aos = "zoom-in">
+      <h1 data-aos-delay = "750" data-aos = "zoom-out">OwlSight</h1>
+      <div class="Sign-in" data-aos-delay = "2500" data-aos = "zoom-in">
       <a class='btn btn-link' href="login.php"><h3>Sign in</h3></a>
       </div>
     </header>
     <div class="topbg">
       <div id="content">
         <section id="section1">
-          <div class="OwlsightPres">
-            <h2 data-aos="slide-left">Flexible Issue Tracker</h2>
-            <h4>Clean. Efficient.<br><strong>Track your bugs.</strong></h4>
+          <div  class="OwlsightPres">
+            <h2 data-aos-delay = "1500" data-aos="zoom-in">Flexible Issue Tracker</h2>
+            <h4 data-aos-delay = "2000" data-aos="zoom-out">Clean. Efficient.<br><strong>Track your bugs.</strong></h4>
           </div>
         </section>
-        <section id="section2" data-aos="flip-left" data-aos-delay="500">
+        <section id="section2" data-aos="flip-left" data-aos-delay="1500">
           <div class="Performant">
             <h2>Simple as can be</h2>
             <p>New decade, New look, New <b>YOU</b> <br> Why not try <b>OwlSight Issue Tracker</b> ?</p>
@@ -45,27 +45,24 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     </div>
     <div class="midbg">
       <section id="section3" class="aos">
-  			<article class="bloc" data-aos="flip-left" id="left">
-  				<h2>Designed for usability</h2>
-  				<h3>Back to what's needed. Powerfully clever.</h3>
-  				<p>
+  			<article class="bloc"  id="left">
+  				<h2 data-aos="fade-down" data-aos-delay="600">Designed for usability</h2>
+  				<h3 data-aos="fade-up" data-aos-delay="800">Back to what's needed. Powerfully clever.</h3>
+  				<p data-aos="fade-up" data-aos-delay="1000">
   					OwlSight keeps track of any project, issue you might have.
             Clear display of what is needed to be done.
   				</p>
   			</article>
   		</section>
-  		<section id="section4" class="aos">
-  			<article class="bloc" data-aos="slide-down">
-  				<h2>Astonishing UI</h2>
-  				<h3>A web application so smooth softwares would only dream of it.</h3>
-  				<h4>The best of Issue and Bug Tracking with a crisp clean interface. Improved.</h4>
+  			<article  class="bloc" >
+  				<h2 data-aos-delay="250" data-aos="fade-in">Astonishing UI</h2>
+  				<h3 data-aos-delay="400" data-aos="fade-in">A web application so smooth softwares would only dream of it.</h3>
+  				<h4 data-aos-delay="500" data-aos="fade-in">The best of Issue and Bug Tracking with a crisp clean interface. Improved.</h4>
   			</article>
-  		</section>
-    </div>
-    <div class="bottombg">
-    </div>
-    <div class="clear">
 
+    </div>
+
+    <div class="clear">
     </div>
     <footer>
       <div class="up" id="up">
@@ -73,12 +70,13 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
       </div>
       <p>&copy; 2019-2020 Erwan Thomy</p>
     </footer>
+    <script src="js/aos.js"></script>
+    <script type="text/javascript">
+      AOS.init({duration:1200,});
+    </script>
   </body>
 
 
                             <!-- JAVASCRIPT  -->
-  <script src="js/aos.js"></script>
-  <script type="text/javascript">
-		AOS.init({duration:1200,});
-	</script>
+
 </html>
